@@ -1,6 +1,8 @@
 'use strict'
 export const fetchJokes = () => {
-  return fetch('http://api.icndb.com/jokes/random/10')
+  return fetch('https://fcctop100.herokuapp.com/api/fccusers/top/recent')
+    //https://fcctop100.herokuapp.com/api/fccusers/top/recent
+    //http://api.icndb.com/jokes/random/10
     .then((res) => res.json() )
     .then((data) => {
       console.log('line 6 fetch');
@@ -11,6 +13,8 @@ export const fetchJokes = () => {
       console.log(err);
     });
 }
+
+//change for gitkraken
 
 export const testFunc = () => 1 + 4;
 
